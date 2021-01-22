@@ -1,4 +1,4 @@
-module.exports = async (client, message) => {
+module.exports = async (client, fetch, message) => {
     if (message.author.bot) return;
 
     const settings = message.settings = client.getSettings(message.guild);
@@ -14,5 +14,5 @@ module.exports = async (client, message) => {
 
     console.log(`[${client.getTime()}] ${message.author.tag} used command "${settings.prefix}${command}" on server "${message.guild.name}" in channel "${message.channel.name}".`);
 
-    cmd.run(client, message, args);
+    cmd.run(client, message, args, fetch);
 };

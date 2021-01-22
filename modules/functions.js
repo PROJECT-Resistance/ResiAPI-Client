@@ -1,6 +1,7 @@
 module.exports = async (client) => {
     const defaultSettings = {
-        prefix: '!'
+        prefix: client.config.prefix,
+        home: client.config.home
     };
 
     client.getSettings = (guild) => {

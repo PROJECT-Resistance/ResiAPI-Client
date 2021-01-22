@@ -1,6 +1,6 @@
 {
   "name": "resi-api-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "^12.4.1",
-    "enmap": "^5.8.0"
+    "enmap": "^5.8.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "standardx": "^7.0.0"
