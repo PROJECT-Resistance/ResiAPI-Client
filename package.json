@@ -1,0 +1,17 @@
+{
+  "name": "resi-api-client",
+  "version": "0.0.1-alpha1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ."
+  },
+  "author": "Lord Vertice#4078",
+  "license": "MIT",
+  "eslintConfig": {
+    "rules": {
+      "semi": [1, "always"],
+      "indent": [1, 4]
+    }
+  }
+}
