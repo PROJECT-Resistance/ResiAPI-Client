@@ -1,6 +1,6 @@
 {
   "name": "resi-api-client",
-  "version": "0.0.1-alpha1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,23 @@
   },
   "author": "Lord Vertice#4078",
   "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "enmap": "^5.8.0"
+  },
+  "devDependencies": {
+    "standardx": "^7.0.0"
+  },
   "eslintConfig": {
     "rules": {
-      "semi": [1, "always"],
-      "indent": [1, 4]
+      "semi": [
+        1,
+        "always"
+      ],
+      "indent": [
+        1,
+        4
+      ]
     }
   }
 }
