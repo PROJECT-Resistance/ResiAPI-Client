@@ -1,6 +1,6 @@
 {
   "name": "resi-api-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,17 +15,5 @@
   },
   "devDependencies": {
     "standardx": "^7.0.0"
-  },
-  "eslintConfig": {
-    "rules": {
-      "semi": [
-        1,
-        "always"
-      ],
-      "indent": [
-        1,
-        4
-      ]
-    }
   }
 }

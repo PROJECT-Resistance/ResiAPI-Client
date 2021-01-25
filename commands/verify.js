@@ -17,7 +17,9 @@ exports.run = async (client, message, args, fetch) => { /* eslint prefer-const: 
                     data.mc = json.name; data.uuid = uuid;
                     message.channel.send(`Your username is \`${json.name}\` with UUID \`${uuid}\``);
                     proceed(data);
-                } else message.channel.send(`The username \`${response}\` does not exist.`);
+                } else {
+                    message.channel.send(`The username \`${response}\` does not exist.`);
+                }
             })
             .catch((error) => {
                 throw error;
@@ -28,7 +30,7 @@ exports.run = async (client, message, args, fetch) => { /* eslint prefer-const: 
         let headers = new fetch.Headers();
         headers.append('Content-Type', 'application/json');
         headers.append('Authorization', 'Basic ' + Buffer.from(client.config.username + ':' + client.config.password).toString('base64'));
-        const rawResponse = await fetch('https://ncp.hopto.org:3000/api/v1/users', {
+        const rawResponse = await fetch(`${client.config.url}/users`, {
             method: 'POST',
             headers: headers,
             body: JSON.stringify(data)
